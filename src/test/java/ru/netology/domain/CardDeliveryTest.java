@@ -29,7 +29,7 @@ public class CardDeliveryTest {
         UserData user = UserGenerator.generateUser();
         //Заполняем поля данными сгенерированного юзера, отправляем форму, проверяем всплывающее окно
         $("[data-test-id='city'] input").setValue(user.getCity());
-//        $("[data-test-id='city'] input").setValue("Москва");
+
         $("[data-test-id='date'] .input__control").sendKeys(Keys.CONTROL + "A");
         $("[data-test-id='date'] .input__control").sendKeys(BACK_SPACE);
         $("[data-test-id='date'] .input__control").setValue(generateDate(5));
